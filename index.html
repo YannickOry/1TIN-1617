@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="stijl.css" rel="stylesheet">
+</head>
+<body>
+<output id="woord"/>
+<img src="../images/elephant.png" alt="Olifant" id="olifant"/>
+<img src="../images/mouse.png" alt="Mouse" id="muis"/>
+<img src="../images/rabbit.png" alt="konijn" id="konijn"/>
+<img src="../images/rhino.png" alt="rat" id="rat"/>
+
+<script>
+    "use strict"
+    document.getElementById("olifant").addEventListener('Click',vergoot("olifant"));
+    document.getElementById("muis").addEventListener('Click',vergoot("muis"));
+    document.getElementById("konijn").addEventListener('Click',vergoot("konijn"));
+    document.getElementById("rat").addEventListener('Click',vergoot("rat"));
+
+   function vergoot(test) {
+var element = document.getElementById(test);
+alert(element.alt);
+element.resize += element;
+
+    }
+</script>
+</body>
+</html>
